@@ -1,198 +1,201 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-  font-size: 7rem;
-  font-weight: 700;
-  color: #000;
-  letter-spacing: 0.3rem;
-}
-
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+h1,
 h2 {
-  font-size: 5rem;
-  font-weight: 700;
   color: #000;
+  font-weight: 700;
+}
+h2,
+h3 {
   letter-spacing: 0.3rem;
   padding-bottom: 5rem;
 }
-
+.header-content,
+.message-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  flex-direction: column;
+}
+.title,
+h1,
+h2 {
+  font-weight: 700;
+}
+.contact-container,
+.contact-next,
+.header-content,
+.message-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: Montserrat, sans-serif;
+}
+h1 {
+  font-size: 7rem;
+  letter-spacing: 0.3rem;
+}
+h2 {
+  font-size: 5rem;
+}
 h3 {
   font-size: 2rem;
   font-weight: 500;
   color: #000;
-  letter-spacing: 0.3rem;
-  padding-bottom: 5rem;
 }
-
+.title,
 p {
   font-size: 3rem;
-  font-weight: 300;
   color: #000;
 }
-
+p {
+  font-weight: 300;
+}
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   color: #000;
 }
-
-/* ###################################### HEADER PAGE STYLING ###################################### */
 header {
   position: relative;
   height: auto;
   width: 100%;
   margin-bottom: 3rem;
 }
-
 .header-content {
   display: flex;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: center;  
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-
 .title {
   text-align: center;
   margin-top: 5rem;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #000;
 }
-
+.footer,
+.footer p {
+  color: #f4f4f4;
+}
 .logo {
   width: 500px;
   height: 500px;
 }
-
 .logo img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
-
-/* ###################################### MESSAGE PAGE STYLING ###################################### */
-
 .message-container {
   display: flex;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   margin-bottom: 30rem;
 }
-
-.message-container .message h1 {
-  margin-bottom: 1rem;
+.contact-container,
+.timing {
+  display: -webkit-box;
+  display: -ms-flexbox;
 }
-
-.message-container p {
-  margin-bottom: 0.5rem;
-}
-
-/* ###################################### CONTACT PAGE STYLING ###################################### */
-
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 10rem;
-}
-
+.contact-container,
 .contact-page {
   margin-bottom: 10rem;
 }
-
+.message-container .message h1 {
+  margin-bottom: 1rem;
+}
+.message-container p {
+  margin-bottom: 0.5rem;
+}
+.contact-container {
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
 .timing {
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 2rem;
   font-size: 2rem;
   font-weight: 300;
 }
-
 .contact-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 5rem;
 }
-
 .contact-next h4 {
   font-weight: 400;
   font-size: 2rem;
 }
-
 .contact-next h3 {
   font-weight: 500;
   font-size: 3rem;
 }
-
-.days {
-  text-align: left;
-}
-
+.days,
 .time {
   text-align: left;
 }
-
-/* ###################################### FOOTER STYLING ###################################### */
 .footer {
   background-color: #1c1f1c;
   padding: 2rem;
   text-align: center;
-  color: #f4f4f4;
 }
-
-.footer p {
-  color: #f4f4f4;
-}
-
 .social-media i {
   margin: 2rem;
 }
-
 .social-media a {
   color: #fff;
 }
-
 .social-media a:hover {
   color: grey;
 }
-
-/* ###################################### MEDIA QUERIES ###################################### */
-/* ###################################### MEDIA QUERIES ###################################### */
-/* ###################################### MEDIA QUERIES ###################################### */
-
 @media screen and (max-width: 600px) {
   html {
     font-size: 35%;
   }
-
-  body{
+  body {
     padding: 0 3rem;
   }
-
   .logo {
     width: 60rem;
     height: 60rem;
   }
-
   .contact-next {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
