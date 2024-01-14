@@ -52,21 +52,20 @@ a {
 
 /* ###################################### HEADER PAGE STYLING ###################################### */
 header {
+  position: relative;
   height: auto;
   width: 100%;
   margin-bottom: 3rem;
 }
 
 .header-content {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .title {
-  /* border: 2px solid red; */
   text-align: center;
   margin-top: 5rem;
   font-size: 3rem;
@@ -75,7 +74,6 @@ header {
 }
 
 .logo {
-  /* border: 2px solid red; */
   width: 500px;
   height: 500px;
 }
@@ -89,7 +87,6 @@ header {
 /* ###################################### MESSAGE PAGE STYLING ###################################### */
 
 .message-container {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,7 +106,6 @@ header {
 /* ###################################### CONTACT PAGE STYLING ###################################### */
 
 .contact-container {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +180,11 @@ header {
 
 @media screen and (max-width: 600px) {
   html {
-    font-size: 40%;
+    font-size: 35%;
+  }
+
+  body{
+    padding: 0 3rem;
   }
 
   .logo {
